@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Sudhansu Bala Das - Academic Portfolio</title>
+  <title>Dr. Sudhansu Bala Das - Academic & Research Portfolio</title>
   <link rel="icon" href="assets/img/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
     }
     .section-title {
       margin-bottom: 30px;
@@ -20,194 +20,146 @@
     .bg-primary-light {
       background-color: #f0f8ff;
     }
-    .timeline {
+    ul.timeline {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
       position: relative;
     }
-    .timeline::before {
+    ul.timeline::before {
       content: '';
       position: absolute;
-      left: 20px;
       top: 0;
-      bottom: 0;
+      left: 20px;
       width: 2px;
-      background: #0d6efd;
+      height: 100%;
+      background: #007bff;
     }
-    .timeline li {
-      position: relative;
-      padding-left: 40px;
+    ul.timeline > li {
       margin-bottom: 20px;
+      padding-left: 40px;
+      position: relative;
     }
-    .timeline li::before {
+    ul.timeline > li::before {
       content: '';
       position: absolute;
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      background: #0d6efd;
-      left: 15px;
+      background: #007bff;
+      left: 14px;
       top: 5px;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header -->
   <header class="bg-dark text-white text-center py-5">
     <div class="container">
       <h1 class="display-4">Dr. Sudhansu Bala Das</h1>
-      <p class="lead">Postdoctoral Researcher | NLP | Machine Translation | Low-Resource Languages | AI & EdTech</p>
+      <p class="lead">Postdoctoral Researcher | NLP | MT | Speech Technology | Educational Technology</p>
       <div class="mt-3">
-        <a href="https://www.linkedin.com/in/sudhansu-bala-das-29832160/" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/LabComputerResearch" class="text-white me-3"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/sudhansu-bala-das-29832160/" target="_blank" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/LabComputerResearch" target="_blank" class="text-white me-3"><i class="bi bi-github"></i></a>
         <a href="mailto:baladas.sudhansu@gmail.com" class="text-white"><i class="bi bi-envelope"></i></a>
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-4 mb-4">
-          <img src="assets/img/profile-img.jpeg" class="img-fluid rounded shadow" alt="Profile Image">
-        </div>
-        <div class="col-lg-8">
-          <h2>About Me</h2>
-          <p>I am a Postdoctoral Researcher at the University of Galway, with a PhD in Computer Science from NIT Rourkela. I specialize in Machine Translation for low-resource Indic languages, NLP applications in education, and speech technology. My work bridges the gap between language technologies and social impact, with multiple contributions in academia and government research labs including DRDO.</p>
-          <ul>
-            <li><strong>Email:</strong> baladas.sudhansu@gmail.com</li>
-            <li><strong>Phone:</strong> +91-8895572085</li>
-            <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=ka2dreAAAAAJ">View Profile</a></li>
-            <li><strong>Portfolio:</strong> <a href="assets/Sudhansu-Resume.pdf" download>Download Resume (PDF)</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section class="bg-primary-light py-5">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
+  <main class="container py-5">
+    <section class="mb-5">
+      <h2 class="section-title">Overview</h2>
       <ul>
-        <li><strong>Postdoc:</strong> University of Galway, Ireland (2025–Present)</li>
-        <li><strong>PhD (CSE):</strong> NIT Rourkela (2020–2024)</li>
-        <li><strong>M.Tech (CSE):</strong> VSSUT Burla (2014–2016) – Gold Medalist</li>
-        <li><strong>B.Tech (CSE):</strong> BPUT Rourkela (2010–2014)</li>
+        <li><strong>Current Position:</strong> Postdoctoral Researcher, <a href="https://www.universityofgalway.ie/" target="_blank">University of Galway</a></li>
+        <li><strong>Research Domain:</strong> NLP, Data Science, Educational Technology</li>
+        <li><strong>Publications:</strong> Published in ACM TALLIP, Cambridge Press, Elsevier, Springer; Presented at <a href="https://wat2022.github.io/" target="_blank">WAT</a></li>
+        <li><strong>Collaborations:</strong> MNMT for Indic Languages with <a href="https://sites.google.com/site/patrabidyutkr/" target="_blank">IIT BHU</a> and <a href="https://www.asifekbal.com/" target="_blank">IIT Patna</a> via ACM India Fellowship</li>
+        <li><strong>Expertise:</strong>
+          <ul>
+            <li>Multilingual Neural Machine Translation (Transformer, NMT, SMT)</li>
+            <li>Speech-to-Text and Odia Speech Captioning Systems</li>
+            <li>Voice-Controlled Speech Recognition Interfaces</li>
+            <li>E-learning platforms for low-resource regions</li>
+          </ul>
+        </li>
+        <li><strong>Teaching:</strong> 4+ years as Teaching Assistant, 5 months at <a href="https://xim.edu.in/" target="_blank">XIM University</a></li>
+        <li><strong>Research:</strong> 4 years at <a href="https://www.drdo.gov.in/" target="_blank">DRDO</a>, India</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title">Professional Experience</h2>
+    <section class="bg-primary-light p-4 rounded mb-5">
+      <h2 class="section-title">Comprehensive Experience</h2>
       <ul>
-        <li><strong>Assistant Professor</strong>, XIM University – Taught AI, ML, DL (Jul–Nov 2024)</li>
-        <li><strong>Senior Researcher</strong>, DRDO – Speech Command Systems, Infrared Vision Processing (2018–2020)</li>
-        <li><strong>Junior Researcher</strong>, DRDO – Web/Network Systems (2016–2018)</li>
-        <li><strong>Teaching Assistant</strong>, NIT Rourkela (2020–2024)</li>
+        <li>Assistant Professor (Grade I), XIM University, Bhubaneswar – Taught AI, ML, DL and supervised NLP projects</li>
+        <li>PhD Scholar, NIT Rourkela – Research on MNMT, SMT, backtranslation, transliteration and tokenization</li>
+        <li>Project Scholar (MeitY) – MT for English-Odia and E-learning platform for underprivileged students</li>
+        <li>Senior Researcher, DRDO Chandipur – NLP tools for HMI, data redundancy, IR image-based DL</li>
+        <li>Junior Researcher, DRDO Chandipur – Web apps for CAN software, server administration</li>
+        <li>Teaching Assistant – NLP, Software Engg, Testing, Programming Labs</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="bg-primary-light py-5">
-    <div class="container">
-      <h2 class="section-title">Key Projects</h2>
+    <section class="mb-5">
+      <h2 class="section-title">Skills</h2>
       <ul>
-        <li><strong>Indic MNMT System:</strong> Developed state-of-the-art multilingual MT systems for Indian languages using Transformer and back-translation.</li>
-        <li><strong>Speech-to-Text:</strong> Built speech recognition pipeline for Odia language with data collection and modeling.</li>
-        <li><strong>E-learning for SC/ST:</strong> Government-funded project providing video captioning in Odia for rural education access.</li>
+        <li><strong>Languages/Tools:</strong> Python, C#, MATLAB, LaTeX</li>
+        <li><strong>Domains:</strong> NLP, Machine Translation, Software Engineering</li>
+        <li><strong>Soft Skills:</strong> Problem Solving, Critical Thinking, Teamwork, Research Writing</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <ul>
-            <li>Python, C#</li>
-            <li>MATLAB, LaTeX</li>
-            <li>Oracle, MySQL</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Machine Translation</li>
-            <li>Speech Recognition</li>
-            <li>Educational Tech Platforms</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Research Proposal Writing</li>
-            <li>Data Science & Visualization</li>
-            <li>Version Control (Git/GitHub)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Updates Section -->
-  <section class="bg-primary-light py-5">
-    <div class="container">
-      <h2 class="section-title">Updates</h2>
-      <ul class="timeline">
-        <li><strong>May 2024:</strong> Best Localization Blog Paper Award at CITLoB Samvad 2024</li>
-        <li><strong>Nov 2023:</strong> AI Excellence Award, SAMVAD</li>
-        <li><strong>Aug 2023:</strong> ACM India Anveshan Setu Fellowship</li>
-        <li><strong>Dec 2022:</strong> Best Paper Award at ICACNI, NIT Warangal</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Achievements Section -->
-  <section class="py-5">
-    <div class="container">
+    <section class="bg-primary-light p-4 rounded mb-5">
       <h2 class="section-title">Achievements</h2>
       <ul>
+        <li>Best Localization Blog Paper – SAMVAD 2024</li>
         <li>AI Excellence Award – SAMVAD 2023</li>
-        <li>Best Localization Blog Paper – CITLoB Samvad 2024</li>
-        <li>Patent Holder: Real-Time Prisoner Monitoring (2021)</li>
-        <li>University Gold Medalist – VSSUT (2016)</li>
-        <li>Reviewer: IEEE TAI, PLOS One, Springer</li>
+        <li>ACM India Anveshan Setu Fellow – 2023</li>
+        <li>Best Paper – ICACNI, NIT Warangal – 2022</li>
+        <li>Australian Patent – IoT-based Prisoner Monitoring – 2021</li>
+        <li>University Gold Medal – M.Tech, VSSUT – 2016</li>
+        <li>1st Prize Robotics – IIT Kharagpur, Trident, etc.</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="bg-primary-light py-5">
-    <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section class="mb-5">
+      <h2 class="section-title">Publications</h2>
+      <p>See all: <a href="https://scholar.google.co.in/citations?hl=en&user=ka2dreAAAAAJ" target="_blank">Google Scholar</a></p>
+      <ul>
+        <li>"Backtranslation for Indic Languages", IndoNLP2025 (CORE A*)</li>
+        <li>"MNMT Indic to Indic", ACM TALLIP 2024</li>
+        <li>"Improving MNMT", ACM TALLIP 2023</li>
+        <li>"SMT for Indic", Cambridge Press 2023</li>
+        <li>"Mistranslation Removal", Springer 2024 (Under Review)</li>
+        <li>"Tokenization for Indic Languages", ACM TIST 2024 (Under Review)</li>
+        <li>And more in Elsevier, IEEE, Springer conferences</li>
+      </ul>
+    </section>
 
-  <!-- Footer -->
+    <section class="bg-primary-light p-4 rounded mb-5">
+      <h2 class="section-title">Leadership & Professional Activities</h2>
+      <ul>
+        <li>Organizer – GlobalNLP2025, ACL 2025, Bulgaria</li>
+        <li>Reviewer – IEEE TAIA, T-VT, Supercomputing, Neurocomputing, Access, PLOS One</li>
+        <li>Conference Reviewer – ICONIP 2024, AfricaNLP 2024, ICORT 2025, COCOLE, R10-HTC</li>
+        <li>Mentored 100+ interns at DRDO and NIT Rourkela</li>
+        <li>Presented SMART EOTS at DRDO Young Scientist Meet, 2019</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="section-title">Contact & Profiles</h2>
+      <ul>
+        <li>Email: <a href="mailto:baladas.sudhansu@gmail.com">baladas.sudhansu@gmail.com</a></li>
+        <li>Phone: +91-8895572085 / +353-892606664</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/sudhansu-bala-das-29832160/" target="_blank">View Profile</a></li>
+        <li>Google Scholar: <a href="https://scholar.google.co.in/citations?hl=en&user=ka2dreAAAAAJ" target="_blank">Citation List</a></li>
+        <li>ResearchGate: <a href="https://www.researchgate.net/profile/Sudhansu-Das/research" target="_blank">Research Portfolio</a></li>
+      </ul>
+    </section>
+  </main>
+
   <footer class="bg-dark text-white text-center py-3">
     <div class="container">
-      &copy; 2025 Dr. Sudhansu Bala Das. All rights reserved.
+      &copy; 2025 Dr. Sudhansu Bala Das. Designed for visibility, impact, and collaboration.
     </div>
   </footer>
 
@@ -215,4 +167,3 @@
 </body>
 
 </html>
-
